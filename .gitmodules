@@ -1,0 +1,3 @@
+[submodule "pcb/kicad_teensy"]
+	path = pcb/kicad_teensy
+	url = https://github.com/XenGi/kicad_teensy.git
