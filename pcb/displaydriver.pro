@@ -1,4 +1,4 @@
-update=Friday, 30 December 2016 'pmt' 22:18:08
+update=Monday, 09 January 2017 'amt' 10:32:13
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,3 +61,13 @@ LibName29=valves
 LibName30=kicad_teensy/teensy
 LibName31=rgbledmtx
 LibName32=TXB0108-PW
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

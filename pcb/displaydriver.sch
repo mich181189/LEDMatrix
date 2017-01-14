@@ -37,11 +37,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "RGB LED Matrix"
+Date "2017-01-09"
+Rev "1.0 "
+Comp "Michael Cullen"
+Comment1 "Bodgetastic Version"
 Comment2 ""
 Comment3 ""
 Comment4 ""
