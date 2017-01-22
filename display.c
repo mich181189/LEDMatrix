@@ -20,6 +20,8 @@ void display_setup()
   pinMode(pin_g2, OUTPUT);
   pinMode(pin_g1, OUTPUT);
 
+  
+
   digitalWriteFast(pin_lat,LOW);
   digitalWriteFast(pin_clk,LOW);
   digitalWriteFast(pin_oe,LOW);
@@ -91,8 +93,8 @@ void display_write(const char* redData, const char* greenData, const char* blueD
       ++bluePtr2;
     }
     display_output_enable(0);
-    display_select_row(y);
     display_latch();
+    display_select_row(y);
     display_output_enable(1);
   }
 }
