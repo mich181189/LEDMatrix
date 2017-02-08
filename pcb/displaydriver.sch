@@ -31,6 +31,7 @@ LIBS:valves
 LIBS:teensy
 LIBS:rgbledmtx
 LIBS:TXB0108-PW
+LIBS:displaydriver-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -219,17 +220,6 @@ F 1 "GND" H 5250 4800 50  0000 C CNN
 F 2 "" H 5250 4950 50  0000 C CNN
 F 3 "" H 5250 4950 50  0000 C CNN
 	1    5250 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Screw_Terminal_1x02 J1
-U 1 1 5870D840
-P 8800 2050
-F 0 "J1" H 8800 2300 50  0000 C TNN
-F 1 "Screw_Terminal_1x02" V 8650 2050 50  0000 C TNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 8800 1825 50  0001 C CNN
-F 3 "" H 8775 2050 50  0001 C CNN
-	1    8800 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -422,9 +412,9 @@ Connection ~ 5300 3750
 Wire Wire Line
 	9000 1950 9200 1950
 Wire Wire Line
-	9200 2200 9000 2200
+	9000 2200 9200 2200
 Wire Wire Line
-	9000 2200 9000 2150
+	9000 2050 9000 2200
 Wire Wire Line
 	3900 4200 4150 4200
 Wire Wire Line
@@ -522,4 +512,16 @@ Wire Wire Line
 	8100 3050 8100 4050
 Wire Wire Line
 	8100 4050 6350 4050
+$Comp
+L BARREL_JACK CON1
+U 1 1 589A96D6
+P 8700 2050
+F 0 "CON1" H 8700 2300 50  0000 C CNN
+F 1 "BARREL_JACK" H 8700 1850 50  0000 C CNN
+F 2 "Connectors:BARREL_JACK" H 8700 2050 50  0001 C CNN
+F 3 "" H 8700 2050 50  0000 C CNN
+	1    8700 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 9000 2150
 $EndSCHEMATC
