@@ -31,7 +31,6 @@ LIBS:valves
 LIBS:teensy
 LIBS:rgbledmtx
 LIBS:TXB0108-PW
-LIBS:displaydriver-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -286,14 +285,14 @@ Wire Wire Line
 Wire Wire Line
 	4650 4400 3900 4400
 Wire Wire Line
-	7600 2550 8100 2550
+	7400 2550 8100 2550
 Wire Wire Line
-	7600 2750 8000 2750
+	7400 2750 8000 2750
 Wire Wire Line
-	8000 2550 8000 3150
+	8000 3150 8000 2550
 Connection ~ 8000 2550
 Wire Wire Line
-	8000 3150 7600 3150
+	7400 3150 8000 3150
 Connection ~ 8000 2750
 Wire Wire Line
 	5250 3300 5450 3300
