@@ -9,9 +9,9 @@ print "#include \"patterns.h\""
 print ""
 print "const char pattern1_r[] = "
 print "{"
-for y in range(0,16):
+for y in range(0,32):
     print "\t",
-    for x in range(0,32):
+    for x in range(0,64):
         px = im.getpixel((x,y))
         print str(px[0]) + ",",
     print ""
@@ -19,9 +19,9 @@ print "};"
 print ""
 print "const char pattern1_g[] = "
 print "{"
-for y in range(0,16):
+for y in range(0,32):
     print "\t",
-    for x in range(0,32):
+    for x in range(0,64):
         px = im.getpixel((x,y))
         print str(px[1]) + ",",
     print ""
@@ -29,9 +29,9 @@ print "};"
 print ""
 print "const char pattern1_b[] = "
 print "{"
-for y in range(0,16):
+for y in range(0,32):
     print "\t",
-    for x in range(0,32):
+    for x in range(0,64):
         px = im.getpixel((x,y))
         print str(px[2]) + ",",
     print ""
