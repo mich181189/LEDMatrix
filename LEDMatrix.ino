@@ -1,6 +1,7 @@
 #include "display.h"
 
 #include "patterns.h"
+#include "font.h"
 
 void setup() {
   display_setup();
@@ -22,53 +23,17 @@ void genPattern()
    {
     for(int x = 0; x < DISPLAY_WIDTH;++x)
     {
-      if(step == y)
+      int font_x = x % fontWidth;
+      int font_y = y % (fontHeight+1);
+      if(font_y == fontHeight)
       {
-        gen_r[px] = 255;
+        gen_r[(y*DISPLAY_WIDTH)+x] = 0;
       }
       else
       {
-        gen_r[px] /= 2;
+        gen_r[(y*DISPLAY_WIDTH)+x] = letterT[(font_y*fontWidth)+font_x];
       }
-      if(step == x)
-      {
-        gen_b[px] = 255;
-      }
-      else
-      {
-        gen_b[px] /= 2;
-      }
-      if((DISPLAY_WIDTH-x) == step)
-      {
-          gen_g[px] = 255;
-      }
-      else
-      {
-        gen_g[px] /= 2;
-      }
-
-     if(abs(x-DISPLAY_WIDTH) - abs(y-DISPLAY_WIDTH) == 5)
-     {  
-        gen_g[px] = 255;
-     }
-      ++px;
-    }
-   }
-   
-   if(step2 == 1)
-   {
-    --step;
-    if(step <= 0)
-     {
-      step2 = 0;
-     }
-   }
-   else
-   {
-    ++step;
-    if(step >= DISPLAY_WIDTH)
-    {
-     step2 = 1;
+      
     }
    }
 }
