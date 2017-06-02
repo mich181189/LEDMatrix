@@ -16,6 +16,7 @@ char gen_b[DISPLAY_WIDTH*DISPLAY_HEIGHT];
 
 int step = 0;
 int step2 = 0;
+
 void genPattern()
 {
     int px = 0;
@@ -37,6 +38,8 @@ void genPattern()
     }
    }
 }
+
+
 
 unsigned long time;
 

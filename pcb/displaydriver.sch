@@ -410,7 +410,7 @@ Wire Wire Line
 	5300 3950 5300 3750
 Connection ~ 5300 3750
 Wire Wire Line
-	9000 1950 9200 1950
+	9000 1950 9750 1950
 Wire Wire Line
 	9000 2200 9200 2200
 Wire Wire Line
@@ -524,4 +524,20 @@ F 3 "" H 8700 2050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 9000 2150
+$Comp
+L Screw_Terminal_1x02 J1
+U 1 1 5930CD16
+P 9950 2050
+F 0 "J1" H 9950 2300 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 9800 2050 50  0000 C TNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol" H 9950 1825 50  0001 C CNN
+F 3 "" H 9925 2050 50  0001 C CNN
+	1    9950 2050
+	-1   0    0    1   
+$EndComp
+Connection ~ 9200 1950
+Wire Wire Line
+	9750 2150 9200 2150
+Wire Wire Line
+	9200 2150 9200 2200
 $EndSCHEMATC
