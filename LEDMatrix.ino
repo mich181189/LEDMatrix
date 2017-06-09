@@ -46,7 +46,7 @@ void genPattern()
       if(y < DISPLAY_HEIGHT/5)
       {
         // Labour Red
-        if(x < (results[0]*DISPLAY_WIDTH)/requiredSeats)
+        if(x < results[0])
         {
           gen_r[(y*DISPLAY_WIDTH)+x] = 0xDC;
           gen_g[(y*DISPLAY_WIDTH)+x] = 0x24;
@@ -61,7 +61,7 @@ void genPattern()
       }
       else if(y < 2*DISPLAY_HEIGHT/5)
       {
-        if(x < (results[1]*DISPLAY_WIDTH)/requiredSeats)
+        if(x < results[1])
         {
           //Conservative Blue
           gen_r[(y*DISPLAY_WIDTH)+x] = 0x00;
@@ -77,7 +77,7 @@ void genPattern()
       }
       else if(y < 3*DISPLAY_HEIGHT/5)
       {
-        if(x < (results[2]*DISPLAY_WIDTH)/requiredSeats)
+        if(x < results[2])
         {
           //UKIP Purple
           gen_r[(y*DISPLAY_WIDTH)+x] = 0x70;
@@ -93,7 +93,7 @@ void genPattern()
       }
       else if(y < 4*DISPLAY_HEIGHT/5)
       {
-        if(x < (results[3]*DISPLAY_WIDTH)/requiredSeats)
+        if(x < results[3])
         {
           // Green
           gen_r[(y*DISPLAY_WIDTH)+x] = 0x78;
@@ -109,7 +109,7 @@ void genPattern()
       }
       else
       {
-        if(x < (results[4]*DISPLAY_WIDTH)/requiredSeats)
+        if(x < results[4])
         {
           // liberal democrat orange
           gen_r[(y*DISPLAY_WIDTH)+x] = 0xFD;
