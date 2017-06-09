@@ -28,9 +28,10 @@ def parseData(data):
     lab = (parseResult('Lab',data)*leds)/required
     con = (parseResult('C',data)*leds)/required
     ukip = (parseResult('UKIP',data)*leds)/required
+    snp = (parseResult('SNP',data)*leds)/required
     green = (parseResult('Green',data)*leds)/required
     libdem = (parseResult('LD',data)*leds)/required
-    return [lab,con,ukip,green,libdem]
+    return [lab,con,snp,green,libdem]
 
 def parseAbreviations(data):
     for party in data['parties']:

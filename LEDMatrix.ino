@@ -26,7 +26,7 @@ int step2 = 0;
 int results[] = {
   50, // labour
   50, // COnservative
-  50, // UKIP
+  50, // SNP
   50, // Green
   50, // LibDem
 };
@@ -79,10 +79,10 @@ void genPattern()
       {
         if(x < results[2])
         {
-          //UKIP Purple
-          gen_r[(y*DISPLAY_WIDTH)+x] = 0x70;
-          gen_g[(y*DISPLAY_WIDTH)+x] = 0x14;
-          gen_b[(y*DISPLAY_WIDTH)+x] = 0x7A;
+          //SNP Yellow
+          gen_r[(y*DISPLAY_WIDTH)+x] = 0xff;
+          gen_g[(y*DISPLAY_WIDTH)+x] = 0xff;
+          gen_b[(y*DISPLAY_WIDTH)+x] = 0x00;
         }
         else
         {
