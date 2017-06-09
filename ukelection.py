@@ -18,8 +18,9 @@ def getData():
     return j
 
 def parseResult(abrev, data):
-    if abrev in data['sopCalc']['results']:
-        return int(data['sopCalc']['results'][abrev]['totalSeats'])
+    for party in data['parties']:
+        if party['abbreviation'] == abrev and 'totalSeats' in party:
+            return int(party['totalSeats'])
     return 0
 
 def parseData(data):
