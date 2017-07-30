@@ -47,6 +47,11 @@ static inline void display_output_enable(int enabled)
 
 static inline void display_write_px(int r1, int g1, int b1, int r2, int g2, int b2)
 {
+  // Rise about 50ns
+  // Fall seems to be about 30ns
+  // Low->High about 408ns 
+  // High->Low about 224ns
+  // clock is running at about 1.6MHz 
   digitalWriteFast(pin_clk, LOW);
   digitalWriteFast(pin_r1, r1);
   digitalWriteFast(pin_g1, g1);
@@ -86,6 +91,7 @@ void display_write(const char* redData, const char* greenData, const char* blueD
     display_select_row(y);
     // by toggling the OE line in the middle of the latch pulse, the pulse length ends up long enough
     // without having to jam some NOOPs in there
+    // 2017-07-29: 41us between latches, last for about 76ns at 96MHz
     digitalWriteFast(pin_lat, HIGH);
     display_output_enable(1);
     digitalWriteFast(pin_lat, LOW);
