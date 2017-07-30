@@ -39,7 +39,7 @@ encoding utf-8
 Sheet 1 1
 Title "RGB LED Matrix"
 Date "2017-01-09"
-Rev "1.0 "
+Rev "1.1"
 Comp "Michael Cullen"
 Comment1 "Bodgetastic Version"
 Comment2 ""
