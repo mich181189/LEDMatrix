@@ -32,7 +32,7 @@ void genPattern()
       }
       else
       {
-        gen_r[(y*DISPLAY_WIDTH)+x] = letterT[(font_y*fontWidth)+font_x];
+        gen_r[(y*DISPLAY_WIDTH)+x] = letterV[(font_y*fontWidth)+font_x];
       }
       
     }

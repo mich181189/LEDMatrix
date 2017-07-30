@@ -24,7 +24,8 @@ extern const char letterQ[];
 extern const char letterR[];
 extern const char letterS[];
 extern const char letterT[];
-
+extern const char letterU[];
+extern const char letterV[];
 
 
 #endif
